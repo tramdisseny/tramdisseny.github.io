@@ -1,0 +1,60 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+
+excerpt_separator: <!--more-->
+
+# Permalinks
+permalink:        pretty
+
+# Site settings
+title: 'I Premi “TRAM merchanDESIGN”'
+email: rgil@oxygen.cat
+description: "El I Premi “TRAM merchanDESIGN” destinat a alumnes de tots els camps de disseny gràfic és el concurs d’idees que seleccionarà els treballs de creativitat i disseny per a la creació de la línia de Merchandising de la marca TRAM, la qual  serà utilitzada a tot el material i productes promocionals del TRAM."
+subdescription: "Cconcurs d’idees per seleccionar treballs de creativitat i disseny per a la creació de la línia de Merchandising de la marca TRAM"
+duration: "Del 27 de març al 17 de Maig del 2015"
+inauguration: "Inauguració, divendres 27 de març a les 19 h"
+place: "Avinguda de Barcelona, S/N 08970 Sant Joan Despí"
+baseurl:
+url: "http://tramdisseny.github.io"
+logoWeb: /images/touch/favicon-web-128x128.png 
+faviconWeb: /favicon.png
+twitter_username: freecates
+github_username:  freecates
+twitter:          TRAM_Barcelona
+
+sass:
+ style: compressed
+
+author:
+  name:           'Ramon Gil'
+  url:            https://twitter.com/freecates
+
+# Build settings
+markdown: kramdown
+
+#Custom vars
+portfoli-author:
+  name: "I Premi “TRAM merchanDESIGN”"
+  url: http://tramdisseny.github.io/
+organitza:
+  tram:
+    description:  "TRAM - organitzadors de I Premi “TRAM merchanDESIGN”"
+    logo: "favicon-web-128x128.png"
+    url: http://www.tram.cat/
+
+colabora:
+  artinpocket:
+    description:  "Artinpocket - Partners de I Premi “TRAM merchanDESIGN”"
+    logo: "artinpocket-partner-figura-i-retrat-footer.png"
+    url:  http://www.artinpocket.cat/
+  oxygen:
+    description:  "Oxygen - Partners de I Premi “TRAM merchanDESIGN”"
+    logo: "oxygen-partner-figura-i-retrat-footer.png"
+    url:  http://www.oxygen.cat/
+
+sale-end: '2014-12-31T00:00:00+01:00'
+
+bower_components: 
+  baseurl: /bower_components/

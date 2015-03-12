@@ -1,0 +1,11 @@
+    <!-- Map Section -->
+        <google-map latitude="41.3698865" longitude="2.0644187" fitToMarkers disableDefaultUI zoom="15" id="mapa">
+        {% assign place_data = site.data.places | where:"id", 2 %}
+        {% assign place = place_data | first %}
+            <google-map-marker latitude="{{ place.latitude }}" longitude="{{ place.longitude }}"
+            title="{{ place.name }}" draggable="false" icon="/favicon.ico">
+                <p><strong>{{ place.name }}</strong></p>
+                <p><small><strong>Adreça:</strong> {{ place.address }}<br/><strong>Telèfon:</strong> <a href="tel:{{ place.phone }}">{{ place.phone }}</a> | <strong><a href="{{ place.getdirections }}">Com arribar-hi?</a></strong></small></p>
+                <p><small><a href="{{ place.url }}" title="{{ place.name }}" rel="external">url</a> | <a href="https://twitter.com/{{ place.twitter }}" title="@{{ place.twitter }} rel="external"">t</a> | <a href="{{ place.facebook }}" title="{{ place.name }} en Facebook" rel="external">f</a> | <a href="mailto:{{ place.email }}" title="Correo-e {{ place.email }}" rel="external">e</a></small></p>
+            </google-map-marker>
+        </google-map>

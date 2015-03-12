@@ -1,0 +1,85 @@
+    <!-- Portfoli Section -->
+    <section id="inscriuthi" class="content-section text-center no-padding">
+        <div class="portfoli-section portfoli-section-figura-i-retrat-simboliques">
+            <div class="yellow-bg">
+                <div class="container">
+                  <h2>Obres de l'exposició <span class="bold">TRAM</span> merchan<span class="bold">DESIGN</span></h2>
+                  <p><small>Aquesta és una breu selecció <strong>d'11 de les 46</strong> peces que formen l'exposició.</small></p>
+                  <hr/>
+                  <h3>Representació i simbòlica</h3>
+                  <p>Un anar i tornar entre el símbol i la realitat (escultures antigues + retrats fundadors + obres de tots els temps que responguin a aquestes intencions.</p>
+                  <div class="row">    
+                      {% for figurairetratobressimbolique in site.data.obres.figurairetratobressimboliques %}
+                          <div class="col-sm-4 portfolio-item">
+                              <a href="#portfolioModal-{{ figurairetratobressimbolique.id }}" class="portfolio-link" data-toggle="modal">
+                                  <div class="caption">
+                                      <div class="caption-content">
+                                          <i class="fa fa-search-plus fa-3x"></i>
+                                      </div>
+                                  </div>
+                                  <figure class="no-margin">
+                                    <div class="padding-artwork-container">
+                                      <img src="{{ figurairetratobressimbolique.featured_src }}" alt="{{ figurairetratobressimbolique.title }}">
+                                    </div>
+                                </figure>
+                              </a>
+                          </div>
+                      {% endfor %}
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="portfoli-section portfoli-section-figura-i-retrat-figuracions">
+            <div class="purple-bg">
+                <div class="container">
+                  <h3>La figuració</h3>
+                  <p>Modelar a partir de la natura</p>
+                  <div class="row">    
+                      {% for figurairetratobresfiguracion in site.data.obres.figurairetratobresfiguracions %}
+                          <div class="col-sm-4 portfolio-item">
+                              <a href="#portfolioModal-{{ figurairetratobresfiguracion.id }}" class="portfolio-link" data-toggle="modal">
+                                  <div class="caption">
+                                      <div class="caption-content">
+                                          <i class="fa fa-search-plus fa-3x"></i>
+                                      </div>
+                                  </div>
+                                  <figure class="no-margin">
+                                    <div class="padding-artwork-container">
+                                      <img src="{{ figurairetratobresfiguracion.featured_src }}" alt="{{ figurairetratobresfiguracion.title }}">
+                                    </div>
+                                </figure>
+                              </a>
+                          </div>
+                      {% endfor %}
+                  </div>
+                </div>
+                </div>
+              </div>
+          </div>
+          <div class="portfoli-section portfoli-section-figura-i-retrat-retrats">
+            <div class="yellow-bg">
+                <div class="container">
+                  <h3>Retrats</h3>
+                  <p>Objectivat, construit, surreal</p>
+                  <div class="row">    
+                      {% for figurairetratobresretrat in site.data.obres.figurairetratobresretrats %}
+                          <div class="col-sm-4 portfolio-item">
+                              <a href="#portfolioModal-{{ figurairetratobresretrat.id }}" class="portfolio-link" data-toggle="modal">
+                                  <div class="caption">
+                                      <div class="caption-content">
+                                          <i class="fa fa-search-plus fa-3x"></i>
+                                      </div>
+                                  </div>
+                                  <figure class="no-margin">
+                                    <div class="padding-artwork-container">
+                                      <img src="{{ figurairetratobresretrat.featured_src }}" alt="{{ figurairetratobresretrat.title }}">
+                                    </div>
+                                </figure>
+                              </a>
+                          </div>
+                      {% endfor %}
+                  </div>
+                </div>
+              </div>
+          </div>
+    </section>

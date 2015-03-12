@@ -1,0 +1,24 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="ca">
+
+{% include head.html %}
+
+<body unresolved id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" {% if page.class == 'artwork' %}class="artwork"{% endif %} {% if page.category == 'mur-diari' %}class="mur-diari"{% endif %}>
+
+    {% include header-post.html %}
+    <section id="inscriuthi" class="content-section text-center purple-bg__full">
+    	<div class="container">
+        {{ content }}
+        </div>
+  	</section>
+    {% include map.html %}
+    {% include footer.html %}
+    {% include aside.html %}
+
+</body>
+
+</html>

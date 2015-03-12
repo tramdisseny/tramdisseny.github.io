@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "name": "I Premi “TRAM merchanDESIGN”",
+  "launch_path": "/index.html",
+  "description": "Cconcurs d’idees per seleccionar treballs de creativitat i disseny per a la creació de la línia de Merchandising de la marca TRAM.",
+  "icons": {
+    "128": "/images/touch/icon-128x128.png"
+  },
+  "developer": {
+    "name": "ramon gil",
+    "url": "http://www.oxygen.cat/"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "display": "standalone",
+  "default_locale": "ca",
+  "permissions": {
+  },
+  "locales": {
+    "ca": {
+      "name": "I Premi “TRAM merchanDESIGN”",
+      "description": "Cconcurs d’idees per seleccionar treballs de creativitat i disseny per a la creació de la línia de Merchandising de la marca TRAM."
+    }
+  }
+}

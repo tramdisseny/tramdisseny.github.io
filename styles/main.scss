@@ -1,0 +1,834 @@
+---
+
+---
+@charset "utf-8";
+
+@import 'stylesheets/bootstrap';
+
+/*!
+ * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+html {
+    background: #f9f9f9 url(/images/touch/segell-tram-320x320.svg) no-repeat center center fixed; 
+    background-size: contain;
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #000000;
+    background: #f9f9f9;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 35px;
+    font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+google-map {
+        display: block;
+        height: 30em;
+      }
+
+@media(min-width:767px) {
+  google-map {
+        height: 40em;
+      }
+}
+
+@media(min-width:767px) {
+    p {
+        margin: 0 0 35px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+
+a {
+    color: #000000;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    font-weight: bold;
+}
+
+footer a {
+  color: #008076;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+    color: #969696;
+}
+
+footer a:hover,
+footer a:focus {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+hr {
+  border-top: 1px dashed;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.copulativa {
+  font-family: 'Courier New',Courier,'Lucida Sans Typewriter','Lucida Typewriter',monospace;
+  text-transform: lowercase;
+  font-weight: normal;
+}
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #000;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 400;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-header .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff!important;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-brand>img {
+  display: inline;
+}
+
+.navbar-custom a {
+    color: #fff;
+}
+
+.navbar-custom .nav li.active {
+    outline: nonte;
+    background-color: rgba(255,255,255,.3);
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a.active {
+    outline: 0;
+    background-color: rgba(255,255,255,.3);
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+        background-color: #000;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+}
+
+.container {
+  max-width: 28rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 38rem) {
+  .container {
+    max-width: 35rem;
+  }
+}
+@media (min-width: 56rem) {
+  .container {
+    max-width: 49rem;
+  }
+}
+@media (min-width: 68rem) {
+  body.mur .container, body.mur-diari .container, body.artwork .container, .container.donatius {
+    max-width: 59rem;
+  }
+}
+
+.no-padding {
+	padding: 0!important;
+}
+
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    background: url(/images/tram-merchan-design-tram-bg-web.jpg) no-repeat bottom center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: rgba(0,128,118,.5);
+    padding: 100px 0;
+
+}
+
+.intro .intro-body .brand-heading {
+    font-size: 35px;
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
+.intro .intro-body .intro-text {
+    font-size: 18px;
+}
+
+@media(min-width:767px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .intro .intro-body .brand-heading {
+        font-size: 4rem;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 25px;
+    }
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 35px;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {    
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.row-animate div figure {
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+     -moz-transition:    -moz-transform .5s ease-in-out;
+      -ms-transition:     -ms-transform .5s ease-in-out;
+       -o-transition:      -o-transform .5s ease-in-out;
+          transition:         transform .5s ease-in-out;
+  }
+.row-animate div figure:hover, .row-animate div figure:focus {
+  -webkit-transform: scale(1.15);
+     -moz-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+       -o-transform: scale(1.15);
+          transform: scale(1.15);
+  }
+
+.download-section {
+    width: 100%;
+    color: #fff;
+    background: url(/images/jordi-pages-inauguracio-poetes-ferits-palau-zuriaga-barcelona-2014.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.serveis-section {
+    width: 100%;
+    color: #fff;
+    background: url(/images/tram-merchan-design-tram-bg-v-web.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.contact-section {
+    width: 100%;
+    color: #fff;
+    background: url(/images/tram-merchan-design-tram-bg-ii-web.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.filosofia-section {
+    width: 100%;
+    color: #fff;
+    background: url(/images/tram-merchan-design-tram-bg-iv-web.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.portfoli-section {
+    width: 100%;
+    color: #ffffff;
+}
+
+.portfoli-section-figura-i-retrat-simboliques {
+    background: url(/images/talla-santa-anna-desconegut-segle-XVIII-figura-i-retrat-iluro-bg-web.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.portfoli-section-figura-i-retrat-retrats {
+    background: url(/images/fumador-amb-pipa-josep-novellas-i-montaner-figura-i-retrat-iluro.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.portfoli-section-figura-i-retrat-figuracions {
+    background: url(/images/soldats-de-cavalleria-josep-cusachs-i-cusachs-figura-i-retrat-iluro-bg-web.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#inscriuthi .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+#inscriuthi .portfolio-item:nth-child(3n+1) {
+    clear: both;
+}
+
+#inscriuthi .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+#inscriuthi .portfolio-item .portfolio-link .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(135,136,138,.9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#inscriuthi .portfolio-item .portfolio-link .caption:hover {
+    opacity: 1;
+}
+
+#inscriuthi .portfolio-item .portfolio-link .caption .caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#inscriuthi .portfolio-item .portfolio-link .caption .caption-content i {
+    margin-top: -12px;
+}
+
+#inscriuthi .portfolio-item .portfolio-link .caption .caption-content h3,
+#inscriuthi .portfolio-item .portfolio-link .caption .caption-content h4 {
+    margin: 0;
+}
+
+#inscriuthi * {
+    z-index: 2;
+}
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .5;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #ffffff;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #ffffff;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+#inscriuthi blockquote footer, #TRAM blockquote footer {
+  color: #ffffff;
+}
+
+@media(min-width:767px) {
+    #inscriuthi .portfolio-item {
+        margin: 0 0 30px;
+    }
+}
+
+figure{
+  background-color: rgba(135,136,138,1);
+  padding: 1em;
+  margin: .25rem -1rem;
+  color: #000000;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+}
+figure img {
+  display: inline;
+  background: #ffffff;
+  padding: 1rem;
+}
+.no-margin {
+  margin: 0!important;
+}
+.margin-bottom-1 {
+  margin-bottom: 1em!important;
+}
+.embed-container {
+    position: relative; 
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+    height: auto; 
+    } 
+.embed-container_16-9 {
+  padding-bottom: 56.25%; 
+}
+.embed-container_4-3 {
+  padding-bottom: 75%; 
+}
+.embed-container_4-4 {
+  padding-bottom: 100%; 
+}
+.embed-container_3-4 {
+  padding-bottom: 125%; 
+}
+.embed-container_9-16 {
+  padding-bottom: 133.33%; 
+}
+.embed-container_3-1 {
+  padding-bottom: 33.33%; 
+}
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed,
+.embed-container .core-image-size { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(135,136,138,1);
+}   
+.padding-artwork-container { 
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+@media (min-width: 38rem) {
+  body.mur-diari .post {
+    width: 14rem;
+    float:left;
+    margin: .25rem;
+  }
+  body.mur-diari .post:nth-child(2n+1) {
+    clear:both;
+  }  
+  h1, figure {
+    margin-left: -2rem;
+  }
+  .brand-heading {
+    margin-left: 0!important;
+}
+  figure {
+    margin: inherit;
+  }
+  body.mur-diari .post figure {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  body.mur-diari footer.related {
+    clear: both;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 56rem) {
+  body.mur-diari .post {
+    width: 17rem;
+  }
+  h1, figure {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .brand-heading {
+    margin-left: 0!important;
+  }
+}
+@media (min-width: 68rem) {
+  body.mur-diari .post {
+    width: 18rem;
+    float:left;
+    margin: .25rem;
+  }
+  body.mur-diari .post:nth-child(2n+1) {
+    clear:none;
+  }
+  body.mur-diari .post:nth-child(3n+1) {
+    clear:both;
+  }
+  h1, figure {
+    margin-left: -4rem;
+  }
+  .brand-heading {
+    margin-left: 0!important;
+  }
+}
+/* social share */
+.socialcount {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.socialcount li {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.socialcount p > a,
+.socialcount li > a {
+  border-bottom-width: 0;
+}
+
+.inline-list {
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none;
+}
+
+.inline-list li {
+  display: inline;
+  list-style-type: none;
+}
+
+/* Related posts */
+.related {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 2px dashed #ffffff;
+}
+.related-posts {
+  padding-left: 0;
+  list-style: none;
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts li small {
+  font-size: 75%;
+  color: #999;
+}
+.related-posts li a:hover {
+  color: #ffd3d3;
+  text-decoration: underline;
+}
+.related-posts li a:hover small {
+  color: inherit;
+}
+
+.footer-section {
+    width: 100%;
+    color: #fff;
+    background: url(/images/tram-merchan-design-tram-bg-iii-web.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.purple-bg {
+	background-color: rgba(0,128,118,.5);
+    padding: 50px 0;
+}
+
+.purple-bg__full,
+.purple-bg__full .panel,
+.purple-bg__full .panel-default>.panel-heading
+ {
+  background-color: rgba(0,128,118,1);
+  color: #ffffff;
+}
+
+.yellow-bg {
+  background-color: rgba(135,136,138,.5);
+    padding: 50px 0;
+}
+.footer-section .yellow-bg {
+  background-color: rgba(135,136,138,.5);
+}
+.content-section {
+        padding-top: 5rem;
+        padding-bottom: 5rem; 
+    }
+
+@media(min-width:767px) {
+    .content-section {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    .purple-bg, .yellow-bg {
+        padding: 100px 0;
+    }
+}
+
+.purple {
+	background-color: rgba(0,128,118,1);
+	color: #ffffff;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #000000;
+    outline: 0;
+    color: #000;
+    background-color: #ffffff;
+}
+
+section#premi .btn-default {
+    border: 1px solid #000000;
+    color: #000000;
+    background-color: transparent;
+}
+
+section#premi .btn-default:hover,
+section#premi .btn-default:focus {
+    border: 1px solid #008076;
+    outline: 0;
+    color: #008076;
+}
+
+ul.banner-social-buttons {
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 50px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+::selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+
+@import 'stylesheets/googleforms';

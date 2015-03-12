@@ -1,0 +1,39 @@
+    <!-- Filosofia Section -->
+    <section id="inscriuthi" class="content-section no-padding">
+        <div class="filosofia-section">
+            <div class="purple-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <h2 class="text-center">Inscriu-t'hi al I Premi <span class="bold">TRAM</span> merchan<span class="bold">DESIGN</span></h2>
+                            <p>Per poder participar has de:</p>
+                            <ol>
+                              <li>Omplir el formulari amb les dades de participant. Un cop rebudes les vostres dades seran revisades i us repondrem conforme heu estat inscrits o rebutjats.</li>
+                              <li>Pujar la teva proposta en format .pdf seguint la nomenclatura: <strong>nom-proposta-nom-any.pdf</strong>. Exemple: "Proposta Beig. Ramon Tram, 2015" ha de ser <strong>"proposta-beig-ramon-tram-2015.pdf"</strong></li>
+                              <li>Enviar còpia de la matrícula on curseu els vostres estudis.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <hr/>
+                  <div class="row">
+                      {% for post in site.categories['inscripcions'] %}
+                        <div class="col-lg-10 col-lg-offset-1 text-left">
+                          {{ post.content }}
+                          <div class="social-share text-center">
+                            <ul class="socialcount socialcount-small inline-list">
+                              <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ post.url }}" title="Share on Facebook"><span class="count"><i class="fa fa-facebook"></i> Like</span></a></li>
+                              {% if page.category == 'place' or page.category == 'patrocinadors' %}
+                              <li class="twitter"><a href="https://twitter.com/intent/tweet?text={{post.title | replace:"'","\'" | uri_escape}}%20%E2%80%94%20{{page.category | replace:"'","\'" | uri_escape}}%20{{site.twitter-sentence | replace:"'","\'" | uri_escape}}&url={{ site.url }}{{post.url | replace:"'","\'" | uri_escape}}&counturl={{ site.url }}{{post.url | replace:"'","\'" | uri_escape}}" title="Share on Twitter"><span class="count"><i class="fa fa-twitter"></i> Tweet</span></a></li>
+                              {% else if %}
+                              <li class="twitter"><a href="https://twitter.com/intent/tweet?text={{post.title}}%20{{site.twitter-sentence | replace:"'","\'" | uri_escape}}&url={{ site.url }}{{post.url | replace:"'","\'" | uri_escape}}&via=fundacioiluro" title="Share on Twitter"><span class="count"><i class="fa fa-twitter"></i> Tweet</span></a></li>
+                              {% endif %}
+                              <li class="googleplus"><a href="https://plus.google.com/share?url={{ site.url }}{{ post.url }}" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus"></i> +1</span></a></li>
+                            </ul>
+                          </div>
+                          <hr/>
+                        </div>
+                      {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>

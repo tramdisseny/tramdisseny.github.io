@@ -1,0 +1,142 @@
+{% for post in site.categories['simboliques'] %}
+    <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.work }}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content content-section text-center purple-bg__full">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+              <div class="modal-body">
+                <hr />
+                <p class="text-center"><small><i class="fa fa-heart"></i> Gaudeix <a href="https://twitter.com/search?q=%23figurairetrat&src=typd&f=realtime">#figuraitretrat</a></small></p>
+                <hr />
+                <h1>{{ post.title }}</h1>
+                    {{ post.content }}
+                <hr />
+                <p class="text-center"><small><i class="fa fa-heart"></i> Gaudeix <a href="https://twitter.com/search?q=%23figurairetrat&src=typd&f=realtime">#figuraitretrat</a></small></p>
+                <hr />
+                <div class="social-share">
+                  <ul class="socialcount socialcount-small inline-list">
+                    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ post.url }}" title="Share on Facebook"><span class="count"><i class="fa fa-facebook"></i> Like</span></a></li>
+                    {% if page.category == 'place' or page.category == 'patrocinadors' %}
+                    <li class="twitter"><a href="https://twitter.com/intent/tweet?text={{post.title | replace:"'","\'" | uri_escape}}%20%E2%80%94%20{{page.category | replace:"'","\'" | uri_escape}}%20{{site.twitter-sentence | replace:"'","\'" | uri_escape}}&url={{ site.url }}{{post.url | replace:"'","\'" | uri_escape}}&counturl={{ site.url }}{{post.url | replace:"'","\'" | uri_escape}}" title="Share on Twitter"><span class="count"><i class="fa fa-twitter"></i> Tweet</span></a></li>
+                    {% else if %}
+                    <li class="twitter"><a href="https://twitter.com/intent/tweet?text={{post.title}}%20{{site.twitter-sentence | replace:"'","\'" | uri_escape}}&url={{ site.url }}{{post.url | replace:"'","\'" | uri_escape}}&via=fundacioiluro" title="Share on Twitter"><span class="count"><i class="fa fa-twitter"></i> Tweet</span></a></li>
+                    {% endif %}
+                    <li class="googleplus"><a href="https://plus.google.com/share?url={{ site.url }}{{ post.url }}" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus"></i> +1</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Tancar</button>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+{% for post in site.categories['figuracions'] %}
+    <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.work }}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content content-section text-center purple-bg__full">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+              <div class="modal-body">
+                <hr />
+                <p class="text-center"><small><i class="fa fa-heart"></i> Gaudeix <a href="https://twitter.com/search?q=%23figurairetrat&src=typd&f=realtime">#figuraitretrat</a></small></p>
+                <hr />
+                <h1>{{ post.title }}</h1>
+                    {{ post.content }}
+                <hr />
+                <p class="text-center"><small><i class="fa fa-heart"></i> Gaudeix <a href="https://twitter.com/search?q=%23figurairetrat&src=typd&f=realtime">#figuraitretrat</a></small></p>
+                <hr />
+                <div class="social-share">
+                  <ul class="socialcount socialcount-small inline-list">
+                    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ post.url }}" title="Share on Facebook"><span class="count"><i class="fa fa-facebook"></i> Like</span></a></li>
+                    {% if page.category == 'place' or page.category == 'patrocinadors' %}
+                    <li class="twitter"><a href="https://twitter.com/intent/tweet?text={{post.title | replace:"'","\'" | uri_escape}}%20%E2%80%94%20{{page.category | replace:"'","\'" | uri_escape}}%20{{site.twitter-sentence | replace:"'","\'" | uri_escape}}&url={{ site.url }}{{post.url | replace:"'","\'" | uri_escape}}&counturl={{ site.url }}{{post.url | replace:"'","\'" | uri_escape}}" title="Share on Twitter"><span class="count"><i class="fa fa-twitter"></i> Tweet</span></a></li>
+                    {% else if %}
+                    <li class="twitter"><a href="https://twitter.com/intent/tweet?text={{post.title}}%20{{site.twitter-sentence | replace:"'","\'" | uri_escape}}&url={{ site.url }}{{post.url | replace:"'","\'" | uri_escape}}&via=fundacioiluro" title="Share on Twitter"><span class="count"><i class="fa fa-twitter"></i> Tweet</span></a></li>
+                    {% endif %}
+                    <li class="googleplus"><a href="https://plus.google.com/share?url={{ site.url }}{{ post.url }}" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus"></i> +1</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Tancar</button>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+{% for post in site.categories['retrats'] %}
+    <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.work }}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content content-section text-center purple-bg__full">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+              <div class="modal-body">
+                <hr />
+                <p class="text-center"><small><i class="fa fa-heart"></i> Gaudeix <a href="https://twitter.com/search?q=%23figurairetrat&src=typd&f=realtime">#figuraitretrat</a></small></p>
+                <hr />
+                <h1>{{ post.title }}</h1>
+                    {{ post.content }}
+                <hr />
+                <p class="text-center"><small><i class="fa fa-heart"></i> Gaudeix <a href="https://twitter.com/search?q=%23figurairetrat&src=typd&f=realtime">#figuraitretrat</a></small></p>
+                <hr />
+                <div class="social-share">
+                  <ul class="socialcount socialcount-small inline-list">
+                    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ post.url }}" title="Share on Facebook"><span class="count"><i class="fa fa-facebook"></i> Like</span></a></li>
+                    {% if page.category == 'place' or page.category == 'patrocinadors' %}
+                    <li class="twitter"><a href="https://twitter.com/intent/tweet?text={{post.title | replace:"'","\'" | uri_escape}}%20%E2%80%94%20{{page.category | replace:"'","\'" | uri_escape}}%20{{site.twitter-sentence | replace:"'","\'" | uri_escape}}&url={{ site.url }}{{post.url | replace:"'","\'" | uri_escape}}&counturl={{ site.url }}{{post.url | replace:"'","\'" | uri_escape}}" title="Share on Twitter"><span class="count"><i class="fa fa-twitter"></i> Tweet</span></a></li>
+                    {% else if %}
+                    <li class="twitter"><a href="https://twitter.com/intent/tweet?text={{post.title}}%20{{site.twitter-sentence | replace:"'","\'" | uri_escape}}&url={{ site.url }}{{post.url | replace:"'","\'" | uri_escape}}&via=fundacioiluro" title="Share on Twitter"><span class="count"><i class="fa fa-twitter"></i> Tweet</span></a></li>
+                    {% endif %}
+                    <li class="googleplus"><a href="https://plus.google.com/share?url={{ site.url }}{{ post.url }}" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus"></i> +1</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Tancar</button>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+    <div class="portfolio-modal modal fade" id="portfolioModal-darreres-exposicions" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content content-section purple-bg__full">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+              <div class="modal-body">
+              <h1>Darreres exposicions</h1>
+                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    {% for post in site.categories['darrereseposicions'] %}
+                      <div class="panel panel-default">
+                        <div class="panel-heading text-center" role="tab" id="heading{{ post.panelid }}">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ post.panelid }}" {% if post.panelid == 1 %}aria-expanded="true"{% endif %} aria-controls="collapse{{ post.panelid }}">
+                              <h2>{{ post.year }}</h2>
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapse{{ post.panelid }}" class="panel-collapse collapse {% if post.panelid == 1 %}in{% endif %}" role="tabpanel" aria-labelledby="heading{{ post.panelid }}">
+                          <div class="panel-body">
+                            {{ post.content }}
+                          </div>
+                        </div>
+                      </div>
+                    {% endfor %}
+                  </div>
+                  <p class="text-center"><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Tancar</button></p>
+              </div>
+            </div>
+        </div>
+    </div>

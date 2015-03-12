@@ -1,0 +1,59 @@
+---
+layout: default-post
+---
+
+{% if page.class == 'artwork' %}<div itemscope itemtype="http://schema.org/IndividualProduct" itemid="#product" class="post"><link itemprop="additionalType" href="http://www.productontology.org/id/Work_of_art" />{% else %}<div class="post">{% endif %}
+  {% if page.class != 'artwork' %}
+    <h1 class="post-title">{{ page.title }} {% if page.category == 'place' %}<span class="gu">- <a href="/places-of-exhibition/">place</a></span>{% endif %} {% if page.category == 'patrocinadors' %}<span class="gu">- <a href="/patrocinadors/">qui? / who?</a></span>{% endif %}</h1>
+  <span class="post-date">{{ page.date | date_to_string }}</span>
+  {% endif %}
+  {% if page.category == 'place' or page.category == 'patrocinadors' %}
+    {{ content }}
+    <p class="text-center"><small><i class="fa fa-heart"></i> Gaudeix <a href="https://twitter.com/search?q=%23figurairetrat&src=typd&f=realtime">#figurairetrat</a></small></p>
+  {% else if %}
+  <hr />
+  <p class="text-center"><small><i class="fa fa-heart"></i> Gaudeix <a href="https://twitter.com/search?q=%23figurairetrat&src=typd&f=realtime">#figurairetrat</a></small></p>
+  <hr />
+  {% if page.class == 'artwork' %}
+  <span itemprop="description">
+  {{ content }}
+  </span>
+  {% else %}
+  {{ content }}
+  {% endif %}
+  <hr />
+  <p class="text-center"><small><i class="fa fa-heart"></i> Gaudeix <a href="https://twitter.com/search?q=%23figurairetrat&src=typd&f=realtime">#figurairetrat</a></small></p>
+  <hr />
+  {% endif %}
+
+  {% if page.class == 'artwork' %}
+    <h1 class="post-title"><span itemprop="name">{{ page.title }}</span> <span class="gu">- <a href="/obres/">Obres</a></span></h1>
+  {% endif %}
+  {% if page.share %}<div class="social-share">
+          <ul class="socialcount socialcount-small inline-list">
+            <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" title="Share on Facebook"><span class="count"><i class="fa fa-facebook"></i> Like</span></a></li>
+            {% if page.category == 'place' or page.category == 'patrocinadors' %}
+            <li class="twitter"><a href="https://twitter.com/intent/tweet?text={{page.title | replace:"'","\'" | uri_escape}}%20%E2%80%94%20{{page.category | replace:"'","\'" | uri_escape}}%20{{site.twitter-sentence | replace:"'","\'" | uri_escape}}&url={{ site.url }}{{page.url | replace:"'","\'" | uri_escape}}&counturl={{ site.url }}{{page.url | replace:"'","\'" | uri_escape}}" title="Share on Twitter"><span class="count"><i class="fa fa-twitter"></i> Tweet</span></a></li>
+            {% else if %}
+            <li class="twitter"><a href="https://twitter.com/intent/tweet?text={{page.title}}%20{{site.twitter-sentence | replace:"'","\'" | uri_escape}}&url={{ site.url }}{{page.url | replace:"'","\'" | uri_escape}}&via=fundacioiluro" title="Share on Twitter"><span class="count"><i class="fa fa-twitter"></i> Tweet</span></a></li>
+            {% endif %}
+            <li class="googleplus"><a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus"></i> +1</span></a></li>
+          </ul>
+        </div>{% endif %}
+</div>
+
+<div class="related">
+  <h2>També et pot interessar</h2>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:5 %}
+      <li>
+        <h3>
+          <a href="{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

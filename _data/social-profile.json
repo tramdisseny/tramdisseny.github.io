@@ -1,0 +1,8 @@
+{ "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "Cconcurs d’idees per seleccionar treballs de creativitat i disseny per a la creació de la línia de Merchandising de la marca TRAM.",
+  "url" : "http://tramdisseny.github.io/",
+  "sameAs" : [ "https://www.facebook.com/fundacioiluro",
+    "https://twitter.com/FundacioIluro",
+    "https://plus.google.com/103161905717476431101"] 
+}

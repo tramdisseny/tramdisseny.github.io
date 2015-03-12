@@ -1,0 +1,14 @@
+- description: "<p>Visita guiada a l’exposició “Retrats” de la Fundació Illuro on ens centrarem durant el recorregut en destacar aquelles obres més destacades del fons de la col.lecció que ens ajudin a entendre la funció social d'aquest gènere artístic al llarg de la història.</p>\n"
+  duration: "50 min"
+  startDate: "2015-03-28T18:00"
+  timetable:
+    saturday: "28/03 i 09/05 a les 18h" 
+    thursday: "16, 23 i 30/04 a les 18h"
+  category: "inscripcions guiades"
+  streetAddress: "La Riera, 92"
+  addressLocality: "Mataró"
+  postalCode: "08301"
+  place: "Ateneu de la TRAM"
+  featured_src: "/images/premi-tram-merchan-design-inscripcions-adult.jpg"
+  aspect_ratio: "16-9"
+  id: 1 
