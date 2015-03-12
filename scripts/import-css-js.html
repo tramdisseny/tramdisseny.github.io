@@ -1,7 +1,6 @@
     <link rel="stylesheet" href="/styles/main.css">
     
     <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="/font-artinpocket/dist/stylesheet.min.css" rel="stylesheet" type="text/css">
     <link href='/vendor/add-to-homescreen/addtohomescreen.min.css' rel='stylesheet' type='text/css'>
 
         <!-- jQuery -->
@@ -14,6 +13,32 @@
     <script src="/scripts/jquery.easing.min.js" async></script>
     <!-- Custom Theme JavaScript -->
     <script src="/scripts/grayscale.min.js" async></script>
+    <script type='text/javascript'>//<![CDATA[
+      var formID = 'ss-form';
+      var formKey = '12Trff2_avkJnUkJCnWS27okOlBSj6rFjQtvJA5Va-i4';
+      var labelName = 'ssTestLabel';
+      var testField = 'ssTestValue';
+      var submitted = false;
+
+      $(document).ready(function() {
+       var ssForm = $('#'+formID);
+
+       var randomInt = Math.floor((Math.random()*100)+1);
+       $('#'+labelName).text('Si ets un humà, escriu "' + randomInt + '" al quadre que figura a continuació');
+        
+       ssForm.submit(function(evt){
+        if($('#'+testField).val() == randomInt){
+         ssForm.attr({'action' : 'https://docs.google.com/forms/d/' + formKey + '/formResponse'});
+         return true;
+        }else{
+         alert('Has de repetir el número "' + randomInt + '"');
+          return false;
+        }
+       });
+      });
+      //]]>
+    </script>
+
     <!--  <script type="text/javascript">
     (function(window, document, undefined) {
       'use strict';

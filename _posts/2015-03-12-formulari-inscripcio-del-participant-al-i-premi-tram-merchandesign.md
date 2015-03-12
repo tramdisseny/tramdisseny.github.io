@@ -20,7 +20,14 @@ email: "info@tram.cat"
     </div> -->
     <div class="padding-artwork-container">
       <h2>Formulari inscripció del participant al I Premi <span class="bold">TRAM</span> merchan<span class="bold">DESIGN</span></h2>
-        <form action="https://docs.google.com/forms/d/12Trff2_avkJnUkJCnWS27okOlBSj6rFjQtvJA5Va-i4/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+          <script type="text/javascript">
+               var submitted=false;
+          </script>
+          <iframe name="hidden_iframe" id="hidden_iframe"
+          style="display:none;" onload="if(submitted)
+          {window.location='/gracies/';}">
+          </iframe>
+        <form action="https://docs.google.com/forms/d/12Trff2_avkJnUkJCnWS27okOlBSj6rFjQtvJA5Va-i4/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;"><ol role="list" class="ss-question-list" style="padding-left: 0">
           <div class="ss-form-question errorbox-good" role="listitem">
           <div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
           <label class="ss-q-item-label" for="entry_687878978"><div class="ss-q-title">Nom
@@ -89,9 +96,11 @@ email: "info@tram.cat"
           ">
           <input type="hidden" name="pageHistory" value="0">
           <input type="hidden" name="fbzx" value="4291854145428465305">
+          <div class="ss-form-entry"><label id="ssTestLabel" for="ssTestValue"></label>
+          <input type="text" name="ssTestValue" value="" id="ssTestValue" /></div>
           <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
           <input type="submit" name="submit" value="Envia" id="ss-submit" class="jfk-button jfk-button-action ">
-          <div class="ss-password-warning ss-secondary-text">No envieu mai contrasenyes a través de Formularis.</div></td>
+          <div class="ss-password-warning ss-secondary-text">No envieu mai contrasenyes a través de formularis.</div></td>
           </tr></tbody></table></div></ol></form>
     </div>
 </figure>
