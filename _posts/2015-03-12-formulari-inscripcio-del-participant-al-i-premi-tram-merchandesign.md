@@ -2,7 +2,7 @@
 layout: post
 og: true
 og-type: article
-title: "Formulari inscripció del participant al I Premi TRAM merchanDESIGN" 
+title: "Formulari inscripció del participant al I Premi <span class='bold'>TRAM</span> merchan<span class='bold'>DESIGN</span>" 
 share: true
 class: event
 categories:
@@ -19,7 +19,7 @@ email: "info@tram.cat"
       <core-image sizing="cover" class="core-image-size" preload fade src="{{ work.featured_src }}"></core-image> 
     </div> -->
     <div class="padding-artwork-container">
-      <h2>Formulari inscripció del participant al I Premi TRAM merchanDESIGN</h2>
+      <h2>Formulari inscripció del participant al I Premi <span class="bold">TRAM</span> merchan<span class="bold">DESIGN</span></h2>
         <form action="https://docs.google.com/forms/d/12Trff2_avkJnUkJCnWS27okOlBSj6rFjQtvJA5Va-i4/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
           <div class="ss-form-question errorbox-good" role="listitem">
           <div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
