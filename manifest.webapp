@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "name": "I Premi “TRAM merchanDESIGN”",
+  "name": "Concurs TRAMdisseny",
   "launch_path": "/index.html",
   "description": "Cconcurs d’idees per seleccionar treballs de creativitat i disseny per a la creació de la línia de Merchandising de la marca TRAM.",
   "icons": {
@@ -19,7 +19,7 @@
   },
   "locales": {
     "ca": {
-      "name": "I Premi “TRAM merchanDESIGN”",
+      "name": "Concurs TRAMdisseny",
       "description": "Cconcurs d’idees per seleccionar treballs de creativitat i disseny per a la creació de la línia de Merchandising de la marca TRAM."
     }
   }

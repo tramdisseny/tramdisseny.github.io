@@ -2,7 +2,7 @@
 layout: post
 og: true
 og-type: article
-title: "1. Formulari inscripció del participant al I Premi <span class='bold'>TRAM</span> merchan<span class='bold'>DESIGN</span>" 
+title: "1. Formulari inscripció del participant al Concurs <span class='bold'>TRAM</span> merchan<span class='bold'>DESIGN</span>" 
 share: true
 class: event
 categories:
@@ -19,7 +19,7 @@ email: "info@tram.cat"
       <core-image sizing="cover" class="core-image-size" preload fade src="{{ work.featured_src }}"></core-image> 
     </div> -->
     <div class="padding-artwork-container">
-      <h2>1. Formulari inscripció del participant al I Premi <span class="bold">TRAM</span> merchan<span class="bold">DESIGN</span></h2>
+      <h2>1. Formulari inscripció del participant al Concurs <span class="bold">TRAM</span>disseny</h2>
           <script type="text/javascript">
                var submitted=false;
           </script>

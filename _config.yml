@@ -9,12 +9,12 @@ excerpt_separator: <!--more-->
 permalink:        pretty
 
 # Site settings
-title: 'I Premi “TRAM merchanDESIGN”'
+title: 'Concurs TRAMdisseny'
 email: rgil@oxygen.cat
-description: "El I Premi “TRAM merchanDESIGN” destinat a alumnes de tots els camps de disseny gràfic és el concurs d’idees que seleccionarà els treballs de creativitat i disseny per a la creació de la línia de Merchandising de la marca TRAM, la qual  serà utilitzada a tot el material i productes promocionals del TRAM."
+description: "El Concurs TRAMdisseny destinat a alumnes de tots els camps de disseny gràfic és el concurs d’idees que seleccionarà els treballs de creativitat i disseny per a la creació de la línia de Merchandising de la marca TRAM, la qual  serà utilitzada a tot el material i productes promocionals del TRAM."
 subdescription: "Cconcurs d’idees per seleccionar treballs de creativitat i disseny per a la creació de la línia de Merchandising de la marca TRAM"
-duration: "Inscripcions: Del 27 de març al 17 de Maig del 2015"
-inauguration: "Lliurament premis, dilluns 18 de maig a les 19 h"
+duration: "Inscripcions: Data límit 30 d'abril del 2015"
+inauguration: "Lliurament premis, pendent de confirmar"
 place: "Avinguda de Barcelona, S/N 08970 Sant Joan Despí"
 baseurl:
 url: "http://tramdisseny.github.io"
@@ -36,21 +36,21 @@ markdown: kramdown
 
 #Custom vars
 portfoli-author:
-  name: "I Premi “TRAM merchanDESIGN”"
+  name: "Concurs TRAMdisseny"
   url: http://tramdisseny.github.io/
 organitza:
   tram:
-    description:  "TRAM - organitzadors de I Premi “TRAM merchanDESIGN”"
+    description:  "TRAM - organitzadors de Concurs TRAMdisseny"
     logo: "favicon-web-128x128.png"
     url: http://www.tram.cat/
 
 colabora:
   artinpocket:
-    description:  "Artinpocket - Partners de I Premi “TRAM merchanDESIGN”"
+    description:  "Artinpocket - Partners de Concurs TRAMdisseny"
     logo: "artinpocket-partner-figura-i-retrat-footer.png"
     url:  http://www.artinpocket.cat/
   oxygen:
-    description:  "Oxygen - Partners de I Premi “TRAM merchanDESIGN”"
+    description:  "Oxygen - Partners de Concurs TRAMdisseny"
     logo: "oxygen-partner-figura-i-retrat-footer.png"
     url:  http://www.oxygen.cat/
 
