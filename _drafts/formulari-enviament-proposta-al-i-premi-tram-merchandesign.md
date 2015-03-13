@@ -9,7 +9,7 @@ categories:
   - inscripcions
 published: true
 work: 1
-email: "info@tram.cat"
+email: "info@tramdisseny.cat"
 ---
 
 {% assign work_data = site.data.inscripcions.adults | where:"id", page.work %}
