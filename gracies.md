@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Moltes gràcies per la teva participació al <span class='bold'>TRAM</span> merchan<span class='bold'>DESIGN</span>"
+title: "Moltes gràcies per la teva participació al <span class='bold'>TRAM</span>disseny"
 ---
 
 <p>Les teves dades seran revisades i et respondrem conforme has estat inscrit o rebutjat</p>

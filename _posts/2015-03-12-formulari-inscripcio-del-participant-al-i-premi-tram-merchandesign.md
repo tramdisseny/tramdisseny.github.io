@@ -2,7 +2,7 @@
 layout: post
 og: true
 og-type: article
-title: "1. Formulari inscripció del participant al Concurs <span class='bold'>TRAM</span> merchan<span class='bold'>DESIGN</span>" 
+title: "1. Formulari inscripció del participant al Concurs <span class='bold'>TRAM</span>disseny" 
 share: true
 class: event
 categories:

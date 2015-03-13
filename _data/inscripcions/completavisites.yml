@@ -1,14 +1,14 @@
-- activity: "I tu, què hi veus?"
-  description: "<p><em>I tu, què hi veus?</em> és una visita dinamitzada acompanyada per un taller final destinada a alumnes d’Educació Primària. Mitjançant l’observació de les principals obres que configuren l’exposició proposem un itinerari concebut com un guió obert on amb l’ajuda dels alumnes treballarem sobre les possibles interpretacions que ens pot suggerir una mateixa imatge. Ens aproparem al tema de la identitat individual i col.lectiva i a la manera de representar-la per a estimular als alumnes una reflexió sobre la seva pròpia identitat.</p>\n<p>Tancarem l’activitat amb la realització d’un taller participatiu de retrat on es podrà experimentar amb tècniques com el collage</p>\n"
-  duration: "1,30 min : 45 min (visita) + 45 min (taller)"
-  people: "Alumnes de 6è. Màxim 25 per grup (1 grup classe)"
+- activity: "1. Formulari inscripció del participant al Concurs <span class='bold'>TRAM</span>disseny"
+  description: "Formulari inscripció del participant al Concurs <span class='bold'>TRAM</span>disseny, d’idees per seleccionar treballs de creativitat i disseny per a la creació de la línia de Merchandising de la marca TRAM"
+  duration: 
+  people: 
   startDate: "2015-04-07T09:15"
-  timetable: "inscripcions a convenir del 7 d'abril al 15 de maig. Bé a les 9:15h bé a les 11:00h"
-  category: "Cicle de primària"
-  streetAddress: "La Riera, 92"
-  addressLocality: "Mataró"
-  postalCode: "08301"
-  place: "Ateneu de la TRAM"
+  timetable: "Inscripcions: Data límit 30 d'abril del 2015"
+  category: 
+  streetAddress: "Avinguda de Barcelona, S/N"
+  addressLocality: "Sant Joan Despí"
+  postalCode: "08970"
+  place: 
   featured_src: "/images/premi-tram-merchan-design-inscripcions-primaria.jpg"
   aspect_ratio: "16-9"
   id: 1 

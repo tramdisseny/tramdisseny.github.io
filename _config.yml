@@ -9,9 +9,9 @@ excerpt_separator: <!--more-->
 permalink:        pretty
 
 # Site settings
-title: 'Concurs TRAMdisseny'
+title: "Concurs <span class='bold'>TRAM</span>disseny"
 email: rgil@oxygen.cat
-description: "El Concurs TRAMdisseny destinat a alumnes de tots els camps de disseny gràfic és el concurs d’idees que seleccionarà els treballs de creativitat i disseny per a la creació de la línia de Merchandising de la marca TRAM, la qual  serà utilitzada a tot el material i productes promocionals del TRAM."
+description: "El Concurs <span class='bold'>TRAM</span>disseny destinat a alumnes de tots els camps de disseny gràfic és el concurs d’idees que seleccionarà els treballs de creativitat i disseny per a la creació de la línia de Merchandising de la marca TRAM, la qual  serà utilitzada a tot el material i productes promocionals del TRAM."
 subdescription: "Cconcurs d’idees per seleccionar treballs de creativitat i disseny per a la creació de la línia de Merchandising de la marca TRAM"
 duration: "Inscripcions: Data límit 30 d'abril del 2015"
 inauguration: "Lliurament premis, pendent de confirmar"
@@ -36,21 +36,21 @@ markdown: kramdown
 
 #Custom vars
 portfoli-author:
-  name: "Concurs TRAMdisseny"
+  name: "Concurs <span class='bold'>TRAM</span>disseny"
   url: http://tramdisseny.github.io/
 organitza:
   tram:
-    description:  "TRAM - organitzadors de Concurs TRAMdisseny"
+    description:  "TRAM - organitzadors de Concurs <span class='bold'>TRAM</span>disseny"
     logo: "favicon-web-128x128.png"
     url: http://www.tram.cat/
 
 colabora:
   artinpocket:
-    description:  "Artinpocket - Partners de Concurs TRAMdisseny"
+    description:  "Artinpocket - Partners de Concurs <span class='bold'>TRAM</span>disseny"
     logo: "artinpocket-partner-figura-i-retrat-footer.png"
     url:  http://www.artinpocket.cat/
   oxygen:
-    description:  "Oxygen - Partners de Concurs TRAMdisseny"
+    description:  "Oxygen - Partners de Concurs <span class='bold'>TRAM</span>disseny"
     logo: "oxygen-partner-figura-i-retrat-footer.png"
     url:  http://www.oxygen.cat/
 

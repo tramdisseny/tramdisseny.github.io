@@ -2,7 +2,7 @@
 layout: post
 og: true
 og-type: article
-title: "Formulari enviament proposta al Concurs <span class='bold'>TRAM</span> merchan<span class='bold'>DESIGN</span>" 
+title: "Formulari enviament proposta al Concurs <span class='bold'>TRAM</span>disseny" 
 share: true
 class: event
 categories:
