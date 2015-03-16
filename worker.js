@@ -5,8 +5,8 @@ importScripts('/bower_components/cache-polyfill/dist/serviceworker-cache-polyfil
 // The SW will be shutdown when not in use to save memory,
 // be aware that any global state is likely to disappear
 
-var DEFAULT_CACHE = 'figurairetrat-app-cache7';
-var AIP_CACHE = 'figurairetrat-aip-cache7';
+var DEFAULT_CACHE = 'tramdisseny-app-cache{{ site.time | date_to_xmlschema }}';
+var AIP_CACHE = 'tramdisseny-aip-cache{{ site.time | date_to_xmlschema }}';
 
 console.log('SW startup', DEFAULT_CACHE);
 
@@ -17,30 +17,30 @@ self.addEventListener('install', function(event) {
       return cache.addAll([
         '/styles/main.css',
         '/font-awesome/css/font-awesome.min.css',
-        '/font-artinpocket/dist/stylesheet.min.css',
+        '/font-awesome/fonts/FontAwesome.otf',
+        '/font-awesome/fonts/fontawesome-webfont.eot',
+        '/font-awesome/fonts/fontawesome-webfont.svg',
+        '/font-awesome/fonts/fontawesome-webfont.ttf',
+        '/font-awesome/fonts/fontawesome-webfont.woff',
         '/feed.xml',
         '/images/touch/chrome-touch-icon-192x192.png',
+        "/images/touch/favicon-web-128x128.png",
         '/apple-touch-icon-precomposed.png',
         '/images/touch/ms-touch-icon-144x144-precomposed.png',
         '/favicon.ico',
-        '/images/1-jordi-pages-collage-serie-far-de-cala-nans-cadaques-inspirada-en-la-poesia-de-michel-houellebecq.jpg',
-        '/images/2-jordi-pages-collage-serie-far-de-cala-nans-cadaques-inspirada-en-la-poesia-de-michel-houellebecq.jpg',
-        '/images/3-jordi-pages-collage-serie-far-de-cala-nans-cadaques-inspirada-en-la-poesia-de-michel-houellebecq.jpg',
-        '/images/4-jordi-pages-gravat-serie-far-de-cala-nans-cadaques.jpg',
-        '/images/artinpocket-organitzadors-barcelona-digital-art-footer.jpg',
-        '/images/grayscale-jordi-pages.jpg',
-        '/images/jordi-pages-busquet-pujolas-bg-obra.jpg',
-        '/images/jordi-pages-cala-nans-bg-obra.jpg',
-        '/images/jordi-pages-exposicio-joan-vinyoli-santa-eulalia.jpg',
-        '/images/jordi-pages-gabriel-ferrater-bg-obra.jpg',
-        '/images/jordi-pages-galeria-cadaques-espai-dos.jpg',
-        '/images/jordi-pages-inauguracio-poetes-ferits-palau-zuriaga-barcelona-2014.jpg',
-        '/images/jordi-pages-joan-vinyoli-bg-obra.jpg',
-        '/images/jordi-pages-poetes-ferits-bg-obra.jpg',
-        '/images/jordi-pages-serie-poetes-ferits-sense-tÃ­tol-collage.jpg',
-        '/images/jordi-pages-trajectoria-bg.jpg',
-        '/images/oxygen-organitzadors-barcelona-digital-art-footer.jpg',
+        "/images/artinpocket-partner-figura-i-retrat-footer.png",
+        "/images/oxygen-partner-figura-i-retrat-footer.png",
+        "/images/premi-tram-merchan-design-inscripcions-adult.jpg",
+        "/images/premi-tram-merchan-design-inscripcions-batxillerat.jpg",
+        "/images/premi-tram-merchan-design-inscripcions-primaria.jpg",
+        "/images/tram-merchan-design-tram-bg-ii-web.jpg",
+        "/images/tram-merchan-design-tram-bg-iii-web.jpg",
+        "/images/tram-merchan-design-tram-bg-iv-web.jpg",
+        "/images/tram-merchan-design-tram-bg-v-web.jpg",
+        "/images/tram-merchan-design-tram-bg-web.jpg",
+        '/bower_components/google-map/google-map.min.html',
         '/bower_components/core-image/core-image.min.html',
+        '/bower_components/google-apis/google-apis.min.html',
         '/bower_components/polymer/polymer.html',
         '/bower_components/polymer/layout.min.html',
         '/bower_components/polymer/polymer.min.js',
@@ -81,13 +81,13 @@ self.addEventListener('activate', function(event) {
 
 // During a fetch, check to see if the requested
 // resource is already cached, if so, return it.
-// If the requested resource comes from Amazon S3,
+// If the requested resource comes from TRAM,
 // dynamically cache it.
 self.addEventListener('fetch', function(event) {
   console.log('fetching', event.request.url);
   var requestURL = new URL(event.request.url);
 
-  if (requestURL.hostname == 'artinpocket.cat') {
+  if (requestURL.hostname == 'www.tram.cat') {
     console.log('fetching from aip');
     event.respondWith(aipResponse(event.request));
   } else {
