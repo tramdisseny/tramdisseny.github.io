@@ -1,8 +1,9 @@
 {
   "version": "1.0.0",
+  "short_name": "Concurs TRAMdisseny",
   "name": "Concurs TRAMdisseny",
   "launch_path": "/index.html",
-  "description": "Cconcurs d’idees per seleccionar treballs de creativitat i disseny per a la creació de la línia de Merchandising de la marca TRAM.",
+  "description": "Cconcurs d’idees per seleccionar treballs de creativitat i disseny per a la creació de la línia de marxandatge de la marca TRAM.",
   "icons": {
     "128": "/images/touch/icon-128x128.png"
   },
@@ -20,7 +21,7 @@
   "locales": {
     "ca": {
       "name": "Concurs TRAMdisseny",
-      "description": "Cconcurs d’idees per seleccionar treballs de creativitat i disseny per a la creació de la línia de Merchandising de la marca TRAM."
+      "description": "Cconcurs d’idees per seleccionar treballs de creativitat i disseny per a la creació de la línia de marxandatge de la marca TRAM."
     }
   }
 }

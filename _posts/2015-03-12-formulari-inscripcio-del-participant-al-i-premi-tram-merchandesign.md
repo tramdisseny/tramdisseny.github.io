@@ -2,7 +2,7 @@
 layout: post
 og: true
 og-type: article
-title: "1. Formulari inscripció del participant al Concurs <span class='bold'>TRAM</span>disseny" 
+title: "Pas 1. Formulari inscripció del participant al Concurs <span class='bold'>TRAM</span>disseny 2015" 
 share: true
 class: event
 categories:
@@ -19,7 +19,7 @@ email: "info@tramdisseny.cat"
       <core-image sizing="cover" class="core-image-size" preload fade src="{{ work.featured_src }}"></core-image> 
     </div> -->
     <div class="padding-artwork-container">
-      <h2>1. Formulari inscripció del participant al Concurs <span class="bold">TRAM</span>disseny</h2>
+      <h2>Pas 1. Formulari inscripció del participant al Concurs <span class="bold">TRAM</span>disseny 2015</h2>
           <script type="text/javascript">
                var submitted=false;
           </script>

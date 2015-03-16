@@ -9,10 +9,10 @@ excerpt_separator: <!--more-->
 permalink:        pretty
 
 # Site settings
-title: "Concurs <span class='bold'>TRAM</span>disseny"
+title: "Concurs <span class='bold'>TRAM</span>disseny 2015"
 email: rgil@oxygen.cat
-description: "El Concurs <span class='bold'>TRAM</span>disseny destinat a alumnes de tots els camps de disseny gràfic és el concurs d’idees que seleccionarà els treballs de creativitat i disseny per a la creació de la línia de merchandising de la marca <span class='bold'>TRAM</span>, la qual  serà utilitzada a tot el material i productes promocionals del <span class='bold'>TRAM</span>."
-subdescription: "Cconcurs d’idees per seleccionar treballs de creativitat i disseny per a la creació de la línia de merchandising de la marca <span class='bold'>TRAM</span>"
+description: "El Concurs <span class='bold'>TRAM</span>disseny 2015 destinat a alumnes de tots els camps de disseny gràfic és el concurs d’idees que seleccionarà els treballs de creativitat i disseny per a la creació de la línia de marxandatge de la marca <span class='bold'>TRAM</span>, la qual  serà utilitzada a tot el material i productes promocionals del <span class='bold'>TRAM</span>."
+subdescription: "Cconcurs d’idees per seleccionar treballs de creativitat i disseny per a la creació de la línia de marxandatge de la marca <span class='bold'>TRAM</span>"
 duration: "Inscripcions: Data límit 30 d'abril del 2015"
 inauguration: "Lliurament premis, pendent de confirmar"
 place: "Avinguda de Barcelona, S/N 08970 Sant Joan Despí"
@@ -36,21 +36,21 @@ markdown: kramdown
 
 #Custom vars
 portfoli-author:
-  name: "Concurs <span class='bold'>TRAM</span>disseny"
+  name: "Concurs <span class='bold'>TRAM</span>disseny 2015"
   url: http://tramdisseny.github.io/
 organitza:
   tram:
-    description:  "TRAM - organitzadors de Concurs <span class='bold'>TRAM</span>disseny"
+    description:  "TRAM - organitzadors de Concurs <span class='bold'>TRAM</span>disseny 2015"
     logo: "favicon-web-128x128.png"
     url: http://www.tram.cat/
 
 colabora:
   artinpocket:
-    description:  "Artinpocket - Partners de Concurs <span class='bold'>TRAM</span>disseny"
+    description:  "Artinpocket - Partners de Concurs <span class='bold'>TRAM</span>disseny 2015"
     logo: "artinpocket-partner-figura-i-retrat-footer.png"
     url:  http://www.artinpocket.cat/
   oxygen:
-    description:  "Oxygen - Partners de Concurs <span class='bold'>TRAM</span>disseny"
+    description:  "Oxygen - Partners de Concurs <span class='bold'>TRAM</span>disseny 2015"
     logo: "oxygen-partner-figura-i-retrat-footer.png"
     url:  http://www.oxygen.cat/
 
