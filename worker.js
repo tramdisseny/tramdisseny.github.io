@@ -24,7 +24,7 @@ self.addEventListener('install', function(event) {
         '/font-awesome/fonts/fontawesome-webfont.woff',
         '/feed.xml',
         '/images/touch/chrome-touch-icon-192x192.png',
-        "/images/touch/favicon-web-128x128.png",
+        "/images/touch/favicon-web-468x128.png",
         '/apple-touch-icon-precomposed.png',
         '/images/touch/ms-touch-icon-144x144-precomposed.png',
         '/favicon.ico',

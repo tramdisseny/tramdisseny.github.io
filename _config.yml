@@ -18,7 +18,7 @@ inauguration: "Lliurament premis, pendent de confirmar"
 place: "Avinguda de Barcelona, S/N 08970 Sant Joan Despí"
 baseurl:
 url: "http://tramdisseny.github.io"
-logoWeb: /images/touch/favicon-web-128x128.png 
+logoWeb: /images/touch/favicon-web-468x128.png 
 faviconWeb: /favicon.png
 twitter_username: freecates
 github_username:  freecates
@@ -41,7 +41,7 @@ portfoli-author:
 organitza:
   tram:
     description:  "TRAM - organitzadors de Concurs <span class='bold'>TRAM</span>disseny 2015"
-    logo: "favicon-web-128x128.png"
+    logo: "favicon-web-468x128.png"
     url: http://www.tram.cat/
 
 colabora:
