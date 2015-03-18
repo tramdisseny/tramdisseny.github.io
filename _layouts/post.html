@@ -9,10 +9,10 @@ layout: default-post
   {% endif %}
   {% if page.category == 'place' or page.category == 'patrocinadors' %}
     {{ content }}
-    <p class="text-center"><small><i class="fa fa-heart"></i> Gaudeix <a href="https://twitter.com/search?q=%23figurairetrat&src=typd&f=realtime">#trammerchandesign</a></small></p>
+    <p class="text-center"><small><i class="fa fa-heart"></i> Gaudeix <a href="https://twitter.com/search?q=%23figurairetrat&src=typd&f=realtime">#TRAMdisseny2015</a></small></p>
   {% else if %}
   <hr />
-  <p class="text-center"><small><i class="fa fa-heart"></i> Gaudeix <a href="https://twitter.com/search?q=%23figurairetrat&src=typd&f=realtime">#trammerchandesign</a></small></p>
+  <p class="text-center"><small><i class="fa fa-heart"></i> Gaudeix <a href="https://twitter.com/search?q=%23figurairetrat&src=typd&f=realtime">#TRAMdisseny2015</a></small></p>
   <hr />
   {% if page.class == 'artwork' %}
   <span itemprop="description">
@@ -22,7 +22,7 @@ layout: default-post
   {{ content }}
   {% endif %}
   <hr />
-  <p class="text-center"><small><i class="fa fa-heart"></i> Gaudeix <a href="https://twitter.com/search?q=%23figurairetrat&src=typd&f=realtime">#trammerchandesign</a></small></p>
+  <p class="text-center"><small><i class="fa fa-heart"></i> Gaudeix <a href="https://twitter.com/search?q=%23figurairetrat&src=typd&f=realtime">#TRAMdisseny2015</a></small></p>
   <hr />
   {% endif %}
 
@@ -33,9 +33,9 @@ layout: default-post
           <ul class="socialcount socialcount-small inline-list">
             <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" title="Share on Facebook"><span class="count"><i class="fa fa-facebook"></i> Like</span></a></li>
             {% if page.category == 'place' or page.category == 'patrocinadors' %}
-            <li class="twitter"><a href="https://twitter.com/intent/tweet?text={{page.title | replace:"'","\'" | uri_escape}}%20%E2%80%94%20{{page.category | replace:"'","\'" | uri_escape}}%20{{site.twitter-sentence | replace:"'","\'" | uri_escape}}&url={{ site.url }}{{page.url | replace:"'","\'" | uri_escape}}&counturl={{ site.url }}{{page.url | replace:"'","\'" | uri_escape}}" title="Share on Twitter"><span class="count"><i class="fa fa-twitter"></i> Tweet</span></a></li>
+            <li class="twitter"><a href="https://twitter.com/intent/tweet?text={{page.title | replace:"'","\'" | uri_escape | strip_html}}%20%E2%80%94%20{{page.category | replace:"'","\'" | uri_escape}}%20{{site.twitter-sentence | replace:"'","\'" | uri_escape}}&url={{ site.url }}{{page.url | replace:"'","\'" | uri_escape}}&counturl={{ site.url }}{{page.url | replace:"'","\'" | uri_escape}}" title="Share on Twitter"><span class="count"><i class="fa fa-twitter"></i> Tweet</span></a></li>
             {% else if %}
-            <li class="twitter"><a href="https://twitter.com/intent/tweet?text={{page.title}}%20{{site.twitter-sentence | replace:"'","\'" | uri_escape}}&url={{ site.url }}{{page.url | replace:"'","\'" | uri_escape}}&via=tram_barcelona" title="Share on Twitter"><span class="count"><i class="fa fa-twitter"></i> Tweet</span></a></li>
+            <li class="twitter"><a href="https://twitter.com/intent/tweet?text={{page.title | strip_html}}%20{{site.twitter-sentence | replace:"'","\'" | uri_escape}}&url={{ site.url }}{{page.url | replace:"'","\'" | uri_escape}}&via=tram_barcelona" title="Share on Twitter"><span class="count"><i class="fa fa-twitter"></i> Tweet</span></a></li>
             {% endif %}
             <li class="googleplus"><a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus"></i> +1</span></a></li>
           </ul>
