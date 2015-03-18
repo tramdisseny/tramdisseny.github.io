@@ -24,7 +24,7 @@
        var ssForm = $('#'+formID);
 
        var randomInt = Math.floor((Math.random()*100)+1);
-       $('#'+labelName).text('Si ets un humà, escriu "' + randomInt + '" al quadre que figura a continuació');
+       $('#'+labelName).text('Ets un humà?, escriu "' + randomInt + '" al quadre que figura a continuació');
         
        ssForm.submit(function(evt){
         if($('#'+testField).val() == randomInt){
