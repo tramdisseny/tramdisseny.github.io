@@ -10,7 +10,6 @@
         <hr/>
 
           <p>Copyright &copy; {{ site.title }}</p>
-          <p>{{ site.description }}</p>
           
           {% for place in site.data.places %}
           <div class="address"><p><small><strong>Adreça:</strong> {{ place.address }} - <strong>Telèfon:</strong> <a href="tel:{{ place.phone }}">{{ place.phone }}</a> - <a href="{{ place.url }}" title="{{ place.name }}" rel="external"><i class="fa fa-external-link"></i></a> | <a href="{{ place.facebook }}" title="{{ place.name }} a Facebook" rel="external"><i class="fa fa-facebook"></i></a> | <a href="{{ place.twitter }}" title="{{ place.name }} a Twitter" rel="external"><i class="fa fa-twitter"></i></a> | <a href="mailto:{{ place.email }}" title="Correo-e {{ place.email }}" rel="external"><i class="fa fa-envelope"></i></a></small></p></div>
@@ -22,11 +21,11 @@
               <h2>Un projecte de</h2>
               <a href="{{ site.organitza.tram.url }}"><img src="/images/touch/{{ site.organitza.tram.logo }}" alt="{{ site.organitza.tram.description }}" title="{{ site.organitza.tram.description }}"></a>
         <hr/>
-          {% for place in site.data.places %}
+          <!-- {% for place in site.data.places %}
           {{ place.description }}
-          {% endfor %}
+          {% endfor %} -->
         
-        <hr/>
+        <!-- <hr/> -->
 
     </div>
 
