@@ -12,7 +12,7 @@
           <p>Copyright &copy; {{ site.title }}</p>
           
           {% for place in site.data.places %}
-          <div class="address"><p><small><strong>Adreça:</strong> {{ place.address }} - <strong>Telèfon:</strong> <a href="tel:{{ place.phone }}">{{ place.phone }}</a> - <a href="{{ place.url }}" title="{{ place.name }}" rel="external"><i class="fa fa-external-link"></i></a> | <a href="{{ place.facebook }}" title="{{ place.name }} a Facebook" rel="external"><i class="fa fa-facebook"></i></a> | <a href="{{ place.twitter }}" title="{{ place.name }} a Twitter" rel="external"><i class="fa fa-twitter"></i></a> | <a href="mailto:{{ place.email }}" title="Correo-e {{ place.email }}" rel="external"><i class="fa fa-envelope"></i></a></small></p></div>
+          <div class="address"><p><small><strong>A.:</strong> {{ place.address }} - <strong>T.:</strong> <a href="tel:{{ place.phone }}">{{ place.phone }}</a> - <a href="{{ place.url }}" title="{{ place.name }}" rel="external"><i class="fa fa-external-link"></i></a> | <a href="{{ place.facebook }}" title="{{ place.name }} a Facebook" rel="external"><i class="fa fa-facebook"></i></a> | <a href="{{ place.twitter }}" title="{{ place.name }} a Twitter" rel="external"><i class="fa fa-twitter"></i></a> | <a href="mailto:{{ place.email }}" title="Correo-e {{ place.email }}" rel="external"><i class="fa fa-envelope"></i></a></small></p></div>
           {% endfor %}
 
         <hr/>
