@@ -24,7 +24,7 @@ self.addEventListener('install', function(event) {
         '/font-awesome/fonts/fontawesome-webfont.woff',
         '/feed.xml',
         '/images/touch/chrome-touch-icon-192x192.png',
-        "/images/touch/favicon-web-468x128.png",
+        "/images/touch/favicon-web-128x128.png",
         '/apple-touch-icon-precomposed.png',
         '/images/touch/ms-touch-icon-144x144-precomposed.png',
         '/favicon.ico',
@@ -87,7 +87,7 @@ self.addEventListener('fetch', function(event) {
   console.log('fetching', event.request.url);
   var requestURL = new URL(event.request.url);
 
-  if (requestURL.hostname == 'www.tram.cat') {
+  if (requestURL.hostname == 'maps.googleapis.com') {
     console.log('fetching from aip');
     event.respondWith(aipResponse(event.request));
   } else {
