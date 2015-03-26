@@ -1,0 +1,17 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Event",
+  "name": "Concurs <span class='bold'>TRAM</span>disseny 2015",
+  "location": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAdress": "Av. d'Eduard Maristany, S/N",
+      "postalCode": "08930",
+      "addressLocality": "Sant Adrià del Besòs"
+    }
+  },
+  "startDate": "2015-04-07T00:00:00+01:00",
+  "endDate":"2015-05-12T00:00:00+01:00",
+  "url": "https://www.tramdisseny.cat/inscripcions/2015/03/12/formulari-inscripcio-del-participant-al-premi-tram-disseny-2015/"
+}
