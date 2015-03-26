@@ -6,10 +6,11 @@
     "@type": "Place",
     "address": {
       "@type": "PostalAddress",
-      "streetAdress": "Av. d'Eduard Maristany, S/N",
+      "streetAddress": "Av. d'Eduard Maristany, S/N",
       "postalCode": "08930",
       "addressLocality": "Sant Adrià del Besòs"
-    }
+    },
+    "name": "TRAM"
   },
   "startDate": "2015-04-07T00:00:00+01:00",
   "endDate":"2015-05-12T00:00:00+01:00",
