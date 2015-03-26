@@ -1,8 +1,9 @@
 { "@context" : "http://schema.org",
   "@type" : "Organization",
   "name" : "Cconcurs d’idees per seleccionar treballs de creativitat i disseny per a la creació de la línia de marxandatge de la marca TRAM.",
-  "url" : "http://tramdisseny.github.io/",
-  "sameAs" : [ "https://www.facebook.com/fundacioiluro",
-    "https://twitter.com/FundacioIluro",
-    "https://plus.google.com/103161905717476431101"] 
+  "url" : "https://www.tramdisseny.cat/",
+  "sameAs" : [ "https://www.facebook.com/pages/TRAM-Barcelona/167804859599",
+    "https://twitter.com/TRAM_Barcelona",
+    "https://www.flickr.com/groups/1315578@N25/",
+    "https://www.youtube.com/user/TRAMBarcelona"] 
 }
