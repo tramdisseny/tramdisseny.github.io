@@ -3,6 +3,8 @@
         <div class="filosofia-section">
             <div class="purple-bg">
                 <div class="container">
+                {% assign end_date = site.time | date_to_xmlschema %}
+                {% if end_date < site.endDate %}
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <h2 class="text-center">Inscripció al Concurs <span class="bold">TRAM</span>disseny 2015</h2>
@@ -34,6 +36,31 @@
                         </div>
                       {% endfor %}
                 </div>
+              {% else %}
+                    <div class="row text-center">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <h2>Inscripció al Concurs <span class="bold">TRAM</span>disseny 2015</h2>
+                            <h3><span class="label label-warning">Inscripcions tancades!</span></h3>
+                            <p>Les inscripcions es van tancar <strong>el {% assign m = site.endDate | date: "%-m" %}
+                            {{ site.endDate | date: "%-d" }} de
+                            {% case m %}
+                              {% when '1' %}Gener
+                              {% when '2' %}Febrer
+                              {% when '3' %}Març
+                              {% when '4' %}Abril
+                              {% when '5' %}Maig
+                              {% when '6' %}Juny
+                              {% when '7' %}Juliol
+                              {% when '8' %}Agost
+                              {% when '9' %}Setembre
+                              {% when '10' %}octubre
+                              {% when '11' %}Novembre
+                              {% when '12' %}Desembre
+                            {% endcase %}
+                            del {{ site.endDate | date: "%Y" }}</strong>. Moltes gràcies a tots els participants. En breu comunicarem el guanyador del Premi <span class="bold">TRAM</span>disseny 2015</p>
+                        </div>
+                    </div>
+              {% endif %}              
             </div>
         </div>
     </section>
