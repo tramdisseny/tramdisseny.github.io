@@ -15,7 +15,6 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(DEFAULT_CACHE).then(function(cache) {
       return cache.addAll([
-        '/styles/main.css',
         '/font-awesome/css/font-awesome.min.css',
         '/font-awesome/fonts/FontAwesome.otf',
         '/font-awesome/fonts/fontawesome-webfont.eot',
