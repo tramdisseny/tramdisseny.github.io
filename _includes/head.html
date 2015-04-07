@@ -12,18 +12,28 @@
     <meta property="og:title" content="{{ page.title  | strip_html }}" />
     <meta property="og:type" content="{{ page.og-type }}" />
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-    {% if page.class == 'event' %}
-        {% assign work_data = site.data.inscripcions.completavisites | where:"id", page.work %}
-        {% assign work = work_data | first %}
-        <meta property="og:image" content="{{ site.url }}{{ work.featured_src }}" />
-        <meta property="og:description" content="{{ work.description | strip_html }}" />
+        {% if page.class == 'event' %}
+            {% assign work_data = site.data.inscripcions.completavisites | where:"id", page.work %}
+            {% assign work = work_data | first %}
+            <meta property="og:image" content="{{ site.url }}{{ work.featured_src }}" />
+            <meta property="og:description" content="{{ work.description | strip_html }}" />
 
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="@{{ site.twitter }}">
-        <meta name="twitter:creator" content="@{% if page.twitter-username %}{{ page.twitter-username }}{% else %}{{ site.twitter }}{% endif %}">
-        <meta name="twitter:title" content="{{ page.title }}">
-        <meta name="twitter:description" content="{{ work.description | strip_html }}">
-        <meta name="twitter:image:src" content="{{ site.url }}{{ work.featured_src }}">
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:site" content="@{{ site.twitter }}">
+            <meta name="twitter:creator" content="@{% if page.twitter-username %}{{ page.twitter-username }}{% else %}{{ site.twitter }}{% endif %}">
+            <meta name="twitter:title" content="{{ page.title }}">
+            <meta name="twitter:description" content="{{ work.description | strip_html }}">
+            <meta name="twitter:image:src" content="{{ site.url }}{{ work.featured_src }}">
+        {% else %}
+            <meta property="og:image" content="{{ site.url }}/images/premi-tram-merchan-design-inscripcions-primaria.jpg" />
+            <meta property="og:description" content="{% if page.title %}{{ page.title  | strip_html }} | {{ site.title  | strip_html }}{% else %}{{ site.subdescription  | strip_html  | strip_newlines | truncate: 160 }} | {{ site.title  | strip_html }}{% endif %}" />
+
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:site" content="@{{ site.twitter }}">
+            <meta name="twitter:creator" content="@{% if page.twitter-username %}{{ page.twitter-username }}{% else %}{{ site.twitter }}{% endif %}">
+            <meta name="twitter:title" content="{{ page.title }}">
+            <meta name="twitter:description" content="{% if page.title %}{{ page.title  | strip_html }} | {{ site.title  | strip_html }}{% else %}{{ site.subdescription  | strip_html  | strip_newlines | truncate: 160 }} | {{ site.title  | strip_html }}{% endif %}">
+            <meta name="twitter:image:src" content="{{ site.url }}/images/premi-tram-merchan-design-inscripcions-primaria.jpg">
         {% endif %}
     {% endif %}
 
