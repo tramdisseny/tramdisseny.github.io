@@ -1,0 +1,32 @@
+{
+  "name": "tramdisseny.github.io",
+  "version": "1.0",
+  "homepage": "https://github.com/tramdisseny/tramdisseny.github.io",
+  "authors": [
+    "freecates <ramongil@ramongil.cat>"
+  ],
+  "description": "App web del Concurs TRAMdisseny",
+  "main": "/index.html",
+  "keywords": [
+    "tram.",
+    "disseny",
+    "concurs",
+    "app",
+    "web",
+    "artinpocket"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "google-map": "GoogleWebComponents/google-map#^1.0.0",
+    "iron-image": "PolymerElements/iron-image#^1.0.0",
+    "paper-toast": "PolymerElements/paper-toast#^1.0.0",
+    "platinum-sw": "PolymerElements/platinum-sw#~1.0.0"
+  }
+}

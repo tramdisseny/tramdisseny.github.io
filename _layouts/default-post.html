@@ -19,6 +19,27 @@ layout: compress
     {% include footer.html %}
     {% include aside.html %}
 
+<template is="dom-bind" id="app">
+
+    <paper-toast id="caching-complete"
+                 duration="6000"
+                 text="Completat l'emmagatzematge en memòria cau! Aquesta aplicació funcionarà offline.">
+    </paper-toast>
+
+    <platinum-sw-register auto-register
+                          clients-claim
+                          skip-waiting
+                          on-service-worker-installed="displayInstalledToast">
+      <platinum-sw-cache default-cache-strategy="networkFirst"
+                         precache-file="/precache.json">
+      </platinum-sw-cache>
+    </platinum-sw-register>
+
+</template>
+
+
+    <script src="/scripts/app.js"></script>
+
 </body>
 
 </html>
