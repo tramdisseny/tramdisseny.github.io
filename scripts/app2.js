@@ -27,7 +27,8 @@
         '/bower_components/iron-image/iron-image.html',
         '/bower_components/platinum-sw/platinum-sw-register.html',
         '/bower_components/platinum-sw/platinum-sw-cache.html',
-        '/bower_components/paper-toast/paper-toast.html'
+        '/bower_components/paper-toast/paper-toast.html',
+        '/scripts/import-css-js.html'
       ];
 
       elements.forEach(function(elementURL) {
